@@ -6,7 +6,9 @@ export const metadata = {
 const RootLayout = ({ children }) => {
     return (
         <html lang="en">
-            <body className="antialiased">{children}</body>
+            <body className="antialiased" suppressHydrationWarning={true}>
+                {children}
+            </body>
         </html>
     )
 }
